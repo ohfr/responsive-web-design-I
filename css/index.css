@@ -1,3 +1,377 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 875px;
+	margin: 0 auto;
+}
+
+
+.nav-container {
+	display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    /* background: rgba(221, 221, 221, .5); */
+    position: fixed;
+}
+
+
+header nav a {
+	text-decoration: none;
+    text-align: center;
+    margin: 0 30px;
+	color: #BFBFBF;
+}
+header nav a:hover {
+	color: #000000;
+}
+
+.top-container {
+	display:flex;
+	margin:0 auto;
+	text-align: center;
+	padding-top: 100px;
+	align-items: center;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	
+}
+.logo {
+	order: 2;
+}
+
+.h1-header {
+	font-size: 80px;
+}
+.h1-container {
+	/* text-align: center; */
+	margin-top: 100px;
+	margin-right: 400px;
+}
+
+/* .header-container img {
+	margin-right: 400px;
+	margin-top: 80;
+} */
+
+.header p {
+	border: 1px solid black;
+	padding: 5px 40px;
+	font-size: 20px;
+	margin-left: 65px;
+	margin-bottom: 40px;
+}
+
+main {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.top-sec section {
+	text-align: left;
+	line-height: 1.5;
+	margin: 0 auto;
+}
+.bottom-sec section {
+	text-align: left;
+	line-height: 1.5;
+	margin: 0 auto;
+}
+.top-sec section h2 {
+	font-size: 25px;
+}
+
+.bottom-sec section h2 {
+	font-size: 25px;
+}
+.middle-img {
+	display: block;
+	margin: 0 auto;
+}
+
+.top-sec {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	display: flex;
+}
+
+
+#features {
+	margin-right: 30px;
+	
+}
+
+.bottom-sec {
+	margin-top: 40px;
+	display: flex;
+}
+.bottom-sec:last-child {
+	border-bottom: 2px solid black;
+	padding-bottom: 20px;
+}
+
+#services {
+	margin-right: 20px;
+}
+
+#product {
+	margin-right: 20px;
+}
+footer {
+	margin-top: 20px;
+}
+
+footer h2 {
+	font-size: 25px;
+}
+
+footer p {
+	text-align: center;
+
+}
+footer address {
+	margin: 0px;
+	line-height: 2;
+} 
+
+
+
+/* Services Page */
+
+.services-body {
+	width: 875px;
+	margin: 0 auto;
+}
+.services-header-img {
+	margin-top: 75px;
+}
+
+h1 {
+	font-size: 30px;
+	margin-top: 20px;
+}
+.services-header {
+	border-bottom: 2px solid black;
+	padding-bottom: 30px;
+}
+
+.mid-container {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+	border-bottom: 4px solid black;
+	margin-bottom: 50px;
+}
+.mid-container section {
+	border: 1px solid black;
+	padding: 20px;
+	background: #E9E6E8;
+	width: 45%;
+	margin: 40px 0;
+}
+section h2 {
+	font-size: 20px;
+}
+
+.bottom-container {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.bottom-top {
+	width: 45%;
+}
+
+.bottom-top p {
+	line-height: 1.5;
+}
+
+.bottom-top ul {
+	line-height: 1.5;
+	margin-top: 10px;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+section button {
+	padding: 10px 35px;
+	border-radius: 5%;
+	background: white;
+	margin-top: 20px;
+	border: 1px solid black;
+
+}
+footer {
+	text-align: center;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+   
+    .nav-container {
+        text-align: center;
+        width: 100%;
+        position: relative;
+	}
+	.header nav {
+		display: flex;
+		flex-flow: column nowrap;
+		width: 100%;
+	}
+    header nav a {
+        width: 100%;
+        border-bottom: 1px solid black;  
+		padding: 20px 0;
+		margin: 0 auto;
+    }
+    .header-container img {
+        display: none;
+	}
+    .top-sec {
+		flex-flow: row wrap;
+		margin: 0 auto;
+    }
+    .bottom-sec {
+        flex-flow: row wrap;
+    }
+    .bottom-sec section {
+        width: 100%;
+        margin:20px 0;
+    }
+
+    .top-sec section {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .middle-img {
+        width: 100%;
+    }
+    .top-container {
+        margin-top: 400px;
+        flex-flow: column nowrap;
+        align-items: center;
+        border-bottom: 2px solid black;
+    }
+    footer {
+        text-align: left;
+    }
+    .top-container {
+        margin-top:0px;
+    }
+    .top-container p {
+        text-align: center;
+        margin-right: 55px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+    .top-container img {
+        display: none;
+	}
+	.top-container {
+		flex-flow: column wrap;
+	}
+    .middle-img {
+        width: 100%;
+    }
+    .nav-container {
+        flex-flow: column nowrap;
+		align-items:center;
+		position: relative;
+	}
+	.nav-container img {
+		margin-bottom: 20px;
+	}
+	header nav a {
+		padding-top: 20px;
+	}
+	footer {
+		text-align: left;
+	}
+	.header p {
+		margin-bottom: 40px;
+		margin-right: 65px;
+	}
+}
